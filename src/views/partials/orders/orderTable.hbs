@@ -1,0 +1,36 @@
+<table class="table table-bordered table-hover table-dark rounded-1">
+  <thead>
+    <tr>
+      <th>N.</th>
+      <th>Business Name</th>
+      <th>Contact Name</th>
+      <th>Description</th>
+      <th>Operations</th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+    {{#each orders}}
+      <tr>
+        <td>{{@index}}</td>
+        <td>{{businessName}}</td>
+        <td>{{contactName}}</td>
+        <td>{{briefDescription}}</td>
+        <td>
+          <a href="/orders/{{_id}}/delete" class="btn btn-danger">Delete</a>
+          <a href="/orders/{{_id}}/edit" class="btn btn-info">Edit</a>
+
+          {{#if started}}
+            <a href="/orders/{{_id}}/startOrder" class="btn btn-success">Order
+              Started</a>
+          {{else}}
+            <a href="/orders/{{_id}}/startOrder" class="btn btn-dark">Start
+              Order</a>
+          {{/if}}
+
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>

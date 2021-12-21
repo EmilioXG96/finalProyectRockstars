@@ -1,0 +1,114 @@
+<div class="card card-body p-4 rounded-1 bg-dark text-white">
+  <form action="/orders/add" method="POST">
+
+    <div>
+      <label for="businessName">Business name:</label>
+      <input
+        type="text"
+        name="businessName"
+        id="businessName"
+        class="form-control rounded-1 bg-dark text-white"
+      />
+    </div>
+
+    <div>
+      <label for="contactName">Contact name:</label>
+      <input
+        type="text"
+        name="contactName"
+        placeholder="Doctor Who"
+        id="contactName"
+        class="form-control rounded-1 bg-dark text-white"
+      />
+    </div>
+
+    <div>
+      <label for="phone">Phone number:</label>
+      <input
+        type="text"
+        name="phone"
+        placeholder="+XX(XXX)XXX-XXXX"
+        id="phone"
+        class="form-control rounded-1 bg-dark text-white"
+      />
+    </div>
+
+    <div>
+      <label for="email">Email:</label>
+      <input
+        type="text"
+        name="email"
+        placeholder="client@email.com"
+        id="email"
+        class="form-control rounded-1 bg-dark text-white"
+      />
+    </div>
+
+    <div>
+      <label for="rfc">RFC:</label>
+      <input
+        type="text"
+        name="rfc"
+        id="rfc"
+        class="form-control rounded-1 bg-dark text-white"
+      />
+    </div>
+
+    <div>
+      <label for="paymentMethod">Payment method:</label>
+      <input
+        type="text"
+        name="paymentMethod"
+        id="paymentMethod"
+        class="form-control rounded-1 bg-dark text-white"
+      />
+    </div>
+
+    <div>
+      <label for="industry">Industry:</label>
+      <input
+        type="text"
+        name="industry"
+        id="industry"
+        class="form-control rounded-1 bg-dark text-white"
+      />
+    </div>
+
+    <div>
+      <label for="specificCosting">Does the client need a specific costing?</label>
+      <input
+        type="boolean"
+        name="specificCosting"
+        id="specificCosting"
+        class="form-control rounded-1 bg-dark text-white"
+      />
+    </div>
+
+    <div>
+      <label for="technicalRequirements">Technical Requirements:</label>
+      <textarea
+        name="technicalRequirements"
+        cols="50"
+        rows="3"
+        placeholder="Research start date, investigation methodologies, required norms..."
+        id="technicalRequirements"
+        class="form-control rounded-1 bg-dark text-white"
+      ></textarea>
+    </div>
+
+    <div>
+      <label for="briefDescription">Requested proyect brief description:</label>
+      <textarea
+        name="briefDescription"
+        cols="50"
+        rows="3"
+        placeholder="Brief description and deadline..."
+        id="briefDescription"
+        class="form-control rounded-1 bg-dark text-white"
+      ></textarea>
+    </div>
+
+    <button class="btn btn-primary btn-sm mt-3">Add Order</button>
+
+  </form>
+</div>

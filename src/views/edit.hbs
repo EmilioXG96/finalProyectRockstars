@@ -1,0 +1,109 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-5 offset-md-3">
+      <div class="card card-body p-4 rounded-1 bg-dark text-white">
+
+        <h1>Update an Order</h1>
+
+        <form action="/orders/{{order._id}}/update" method="POST">
+
+          <div class="mb-3">
+            <input
+              type="text"
+              name="businessName"
+              placeholder="Business Name"
+              value="{{order.businessName}}"
+              class="form-control rounded-1 bg-dark text-white"
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="text"
+              name="contactName"
+              placeholder="Contact Name"
+              value="{{order.contactName}}"
+              class="form-control rounded-1 bg-dark text-white"
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="text"
+              name="phone"
+              placeholder="+XX(XXX)XXX-XXXX"
+              value="{{order.phone}}"
+              class="form-control rounded-1 bg-dark text-white"
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="text"
+              name="email"
+              placeholder="client@email.com"
+              value="{{order.email}}"
+              class="form-control rounded-1 bg-dark text-white"
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="text"
+              name="rfc"
+              placeholder="RFC"
+              value="{{order.rfc}}"
+              class="form-control rounded-1 bg-dark text-white"
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="text"
+              name="paymentMethod"
+              placeholder="Payment Method"
+              value="{{order.paymentMethod}}"
+              class="form-control rounded-1 bg-dark text-white"
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="text"
+              name="industry"
+              placeholder="Industry"
+              value="{{order.industry}}"
+              class="form-control rounded-1 bg-dark text-white"
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="text"
+              name="specificCosting"
+              placeholder="Specific Costing"
+              value="{{order.specificCosting}}"
+              class="form-control rounded-1 bg-dark text-white"
+            />
+          </div>
+
+          <div class="mb-3">
+            <textarea
+              name="technicalRequirements"
+              cols="50"
+              rows="3"
+              placeholder="Research start date, investigation methodologies, required norms..."
+              class="form-control rounded-1 bg-dark text-white"
+            >{{order.technicalRequirements}}
+            </textarea>
+          </div>
+          <div class="mb-3">
+            <textarea
+              name="briefDescription"
+              cols="50"
+              rows="3"
+              placeholder="Brief description and deadline..."
+              class="form-control rounded-1 bg-dark text-white"
+            >{{order.briefDescription}}
+            </textarea>
+          </div>
+          <button class="btn btn-primary rounded-1">Update</button>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
